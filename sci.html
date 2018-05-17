@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate Me</title>
+	<link rel="stylesheet" type="text/css" href="style/styles.css">
+</head>
+<body>
+
+	<form id="convert" class="module-active">
+		<label for="add-contact" class="header">Scientific Calculator</label>
+		<input type="text" id="input" class="input" name="input" placeholder="Input">  
+		<input type="text" id="result" class="result" name="result" placeholder="Result" readonly="readonly">
+
+		<input type="button" value="2nd" class="figure">
+		<input type="button" value="(" onclick="v('(')" class="figure">
+		<input type="button" value=")" onclick="v(')')" class="figure">
+		<input type="button" value="%" onclick="v('%')" class="figure">
+		<input type="button" value="mc" class="figure">
+		<input type="button" value="m+" class="figure">
+		<input type="button" value="m-" class="figure">
+		<input type="button" value="mr" class="figure">
+
+		<input type="button" value="1/x" onclick="div()" class="figure">
+		<input type="button" value="x^2" onclick="pow(2)" class="figure">
+		<input type="button" value="x^3" onclick="pow(3)" class="figure">
+		<input type="button" value="y^x" class="figure">
+		<input type="button" value="C" onclick="cl(' ')" class="cal">
+		<input type="button" value="+/-" onclick="chan()" class="cal">
+		<input type="button" value="/" onclick="v('/')" class="cal">
+		<input type="button" value="*" onclick="v('*')" class="cal">
+
+		<input type="button" value="x!" onclick="fact()" class="figure">
+		<input type="button" value="root" onclick="root()" class="figure">
+		<input type="button" value="log" onclick="log()" class="figure">
+		<input type="button" value="2^x" onclick="pow2(2)" class="figure">
+		<input type="button" value="7" onclick="v('7')" class="number">
+		<input type="button" value="8" onclick="v('8')" class="number">
+		<input type="button" value="9" onclick="v('9')" class="number">
+		<input type="button" value="-" onclick="v('-')" class="cal">
+
+		<input type="button" value="sin" onclick="sin()" class="figure">
+		<input type="button" value="cos" onclick="cos()" class="figure">
+		<input type="button" value="tan" onclick="tan()" class="figure">
+		<input type="button" value="10^" onclick="pow2(10)" class="figure">
+		<input type="button" value="4" onclick="v('4')" class="number">
+		<input type="button" value="5" onclick="v('5')" class="number">
+		<input type="button" value="6" onclick="v('6')" class="number">
+		<input type="button" value="+" onclick="v('+')" class="cal">
+
+		<input type="button" value="sin-1" onclick="nsin()" class="figure">
+		<input type="button" value="cos-1" onclick="ncos()" class="figure">
+		<input type="button" value="tan-1" onclick="ntan()" class="figure">
+		<input type="button" value="." onclick="v('.')" class="figure">
+		<input type="button" value="1" onclick="v('1')" class="number">
+		<input type="button" value="2" onclick="v('2')" class="number">
+		<input type="button" value="3" onclick="v('3')" class="number">
+		<input type="button" value="0" onclick="v('0')" class="cal">
+
+		<input type="button" value="=" onclick="e()" class="submit">
+	</form>
+	
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

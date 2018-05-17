@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Georgia";
+	font-size: 16px;
+	background-color: #444;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.module-active {
+	opacity: 1 !important;
+	pointer-events: auto !important;
+}
+
+#convert {
+	position: absolute;
+	display: table;
+	box-sizing: border-box;
+	padding: 54px 54px;
+	top: 20vh;
+	width: 40%;
+	background-color: #f3f3f3;
+	border-radius: 3px;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+#convert .header {
+	position: relative;
+	display: block;
+	font-size: 24px;
+	margin-bottom: 36px;
+}
+
+#convert .input {
+	display: block;
+	outline: none;
+	border: none;
+	padding: 24PX;
+	width: 88%;
+	height: 15px;
+	font-size: 18px;
+	margin-bottom: 14px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+
+#convert .result {
+	display: block;
+	outline: none;
+	border: none;
+	padding: 24PX;
+	width: 30%;
+	height: 5px;
+	font-size: 18px;
+	margin-bottom: 14px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+
+#convert .figure, #convert .cal, #convert .number{
+	display: inline;
+	outline: none;
+	border: 1px solid black;
+	padding: 10px;
+	width: 11%;
+	font-size: 18px;
+	margin-bottom: 14px;
+	margin-left: 5px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+
+#convert .figure:hover {
+	background-color: #FFFF00;
+}
+
+#convert .cal {
+	background-color: #FFFF00;
+}
+
+#convert .cal:hover {
+	background-color: #f3f3f3;
+}
+
+#convert .number {
+	background-color: #800000;
+}
+
+#convert .number:hover {
+	background-color: #808080;
+}
+
+#convert .submit {
+	display: block;
+	outline: none;
+	border: none;
+	padding: 26PX;
+	width: 95%;
+	height: 15px;
+	font-size: 18px;
+	margin-bottom: 14px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+	background-color: #808080;
+	color: white;
+}
+
+#convert .submit:hover {
+	background-color: #f3f3f3;
+	color: black;
+}
